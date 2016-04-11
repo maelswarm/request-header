@@ -1,59 +1,57 @@
 var idx = module.exports = {}
 
-idx.header;
-
-idx.accept;
-idx.acceptcharset;
-idx.acceptencoding;
-idx.acceptlanguage;
-idx.acceptdatetime;
-idx.authorization;
-idx.cachecontrol;
-idx.connection;
-idx.cookie;
-idx.contentlength;
-idx.contentmd5;
-idx.contenttype;
-idx.date;
-idx.expect;
-idx.forwarded;
-idx.from;
-idx.host;
+idx.accept = "";
+idx.acceptcharset = "";
+idx.acceptencoding = "";
+idx.acceptlanguage = "";
+idx.acceptdatetime = "";
+idx.authorization = "";
+idx.cachecontrol = "";
+idx.connection = "";
+idx.cookie = "";
+idx.contentlength = "";
+idx.contentmd5 = "";
+idx.contenttype = "";
+idx.date = "";
+idx.expect = "";
+idx.forwarded = "";
+idx.from = "";
+idx.host = "";
 idx.httpversion = "HTTP/1.1";
-idx.ifmatch;
-idx.ifmodifiedsince;
-idx.ifnonematch;
-idx.ifrange;
-idx.ifunmodifiedsince;
-idx.maxforwards;
+idx.ifmatch = "";
+idx.ifmodifiedsince = "";
+idx.ifnonematch = "";
+idx.ifrange = "";
+idx.ifunmodifiedsince = "";
+idx.maxforwards = "";
 idx.method = "GET";
-idx.origin;
-idx.pragma;
-idx.proxyauthorization;
-idx.range;
-idx.referer;
-idx.relativepath = "/"
-	idx.te;
-idx.useragent;
-idx.upgrade;
-idx.via;
-idx.warning;
-idx.xrequestedwith;
-idx.dnt;
-idx.xforwardedfor;
-idx.xforwardedhost;
-idx.xforwardedproto;
-idx.frontendhttps;
-idx.xhttpmethodoverride;
-idx.xattdeviceid;
-idx.xwapprofile;
-idx.proxyconnection;
-idx.xuidh;
-idx.xcsrftoken;
+idx.origin = "";
+idx.pragma = "";
+idx.proxyauthorization = "";
+idx.range = "";
+idx.referer = "";
+idx.relativepath = "/";
+idx.te = "";
+idx.useragent = "";
+idx.upgrade = "";
+idx.via = "";
+idx.warning = "";
+idx.xrequestedwith = "";
+idx.dnt = "";
+idx.xforwardedfor = "";
+idx.xforwardedhost = "";
+idx.xforwardedproto = "";
+idx.frontendhttps = "";
+idx.xhttpmethodoverride = "";
+idx.xattdeviceid = "";
+idx.xwapprofile = "";
+idx.proxyconnection = "";
+idx.xuidh = "";
+idx.xcsrftoken = "";
 
-idx.construct = function() {
-	idx.header = idx.method+" "+idx.relativepath+" "+idx.httpversion+"\r\n"+
-	idx.accept;+"\r\n"+
+idx.header = function() {
+	return idx.method+" "+idx.relativepath+" "+idx.httpversion+"\r\n"+
+	idx.accept+"\r\n"+
 	idx.acceptcharset+"\r\n"+
 	idx.acceptencoding+"\r\n"+
 	idx.acceptlanguage+"\r\n"+
