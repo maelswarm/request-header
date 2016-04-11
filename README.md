@@ -9,7 +9,7 @@ npm install request-header
 ## Example ##
 
 ````
-var myHead = require("./index.js");
+var myHead = require("request-header");
 myHead.host = "www.google.com:80";
 myHead.connection = "close";
 myHead.method = "GET"
