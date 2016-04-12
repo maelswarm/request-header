@@ -1,5 +1,8 @@
 var idx = module.exports = {}
 
+idx.headerstr = "";
+idx.custom = ""
+
 idx.accept = "";
 idx.acceptcharset = "";
 idx.acceptencoding = "";
@@ -50,50 +53,147 @@ idx.xuidh = "";
 idx.xcsrftoken = "";
 
 idx.header = function() {
-	return idx.method+" "+idx.relativepath+" "+idx.httpversion+"\r\n"+
-	idx.accept+"\r\n"+
-	idx.acceptcharset+"\r\n"+
-	idx.acceptencoding+"\r\n"+
-	idx.acceptlanguage+"\r\n"+
-	idx.acceptdatetime+"\r\n"+
-	idx.authorization+"\r\n"+
-	idx.cachecontrol+"\r\n"+
-	idx.connection+"\r\n"+
-	idx.cookie+"\r\n"+
-	idx.contentlength+"\r\n"+
-	idx.contentmd5+"\r\n"+
-	idx.contenttype+"\r\n"+
-	idx.date+"\r\n"+
-	idx.expect+"\r\n"+
-	idx.forwarded+"\r\n"+
-	idx.from+"\r\n"+
-	idx.host+"\r\n"+
-	idx.ifmatch+"\r\n"+
-	idx.ifmodifiedsince+"\r\n"+
-	idx.ifnonematch+"\r\n"+
-	idx.ifrange+"\r\n"+
-	idx.ifunmodifiedsince+"\r\n"+
-	idx.maxforwards+"\r\n"+
-	idx.origin+"\r\n"+
-	idx.pragma+"\r\n"+
-	idx.proxyauthorization+"\r\n"+
-	idx.range+"\r\n"+
-	idx.referer+"\r\n"+
-	idx.te+"\r\n"+
-	idx.useragent+"\r\n"+
-	idx.upgrade+"\r\n"+
-	idx.via+"\r\n"+
-	idx.warning+"\r\n"+
-	idx.xrequestedwith+"\r\n"+
-	idx.dnt+"\r\n"+
-	idx.xforwardedfor+"\r\n"+
-	idx.xforwardedhost+"\r\n"+
-	idx.xforwardedproto+"\r\n"+
-	idx.frontendhttps+"\r\n"+
-	idx.xhttpmethodoverride+"\r\n"+
-	idx.xattdeviceid+"\r\n"+
-	idx.xwapprofile+"\r\n"+
-	idx.proxyconnection+"\r\n"+
-	idx.xuidh+"\r\n"+
-	idx.xcsrftoken+"\r\n"+"\r\n";
+	idx.headerstr+=idx.method+" "+idx.relativepath+" "+idx.httpversion+"\r\n"
+
+	if(idx.accept!=="") {
+		idx.headerstr+=idx.accept+"\r\n";
+	}
+	if(idx.acceptcharset!=="") {
+		idx.headerstr+=idx.acceptcharset+"\r\n";
+	}
+	if(idx.acceptencoding!=="") {
+		idx.headerstr+=idx.acceptencoding+"\r\n";
+	}
+	if(idx.acceptlanguage!=="") {
+		idx.headerstr+=idx.acceptlanguage+"\r\n";
+	}
+	if(idx.acceptdatetime!=="") {
+		idx.headerstr+=idx.acceptdatetime+"\r\n";
+	}
+	if(idx.authorization!=="") {
+		idx.headerstr+=idx.authorization+"\r\n";
+	}
+	if(idx.cachecontrol!=="") {
+		idx.headerstr+=idx.cachecontrol+"\r\n";
+	}
+	if(idx.connection!=="") {
+		idx.headerstr+=idx.connection+"\r\n";
+	}
+	if(idx.cookie!=="") {
+		idx.headerstr+=idx.cookie+"\r\n";
+	}
+	if(idx.contentlength!=="") {
+		idx.headerstr+=idx.contentlength+"\r\n";
+	}
+	if(idx.contentmd5!=="") {
+		idx.headerstr+=idx.contentmd5+"\r\n";
+	}
+	if(idx.contenttype!=="") {
+		idx.headerstr+=idx.contenttype+"\r\n";
+	}
+	if(idx.custom!=="") {
+		idx.headerstr+=idx.custom+"\r\n";
+	}
+	if(idx.date!=="") {
+		idx.headerstr+=idx.date+"\r\n";
+	}
+	if(idx.expect!=="") {
+		idx.headerstr+=idx.expect+"\r\n";
+	}
+	if(idx.forwarded!=="") {
+		idx.headerstr+=idx.forwarded+"\r\n";
+	}
+	if(idx.from!=="") {
+		idx.headerstr+=idx.from+"\r\n";
+	}
+	if(idx.host!=="") {
+		idx.headerstr+=idx.host+"\r\n";
+	}
+	if(idx.ifmatch!=="") {
+		idx.headerstr+=idx.ifmatch+"\r\n";
+	}
+	if(idx.ifmodifiedsince!=="") {
+		idx.headerstr+=idx.ifmodifiedsince+"\r\n";
+	}
+	if(idx.ifnonematch!=="") {
+		idx.headerstr+=idx.ifnonematch+"\r\n";
+	}
+	if(idx.ifrange!=="") {
+		idx.headerstr+=idx.ifrange+"\r\n";
+	}
+	if(idx.ifunmodifiedsince!=="") {
+		idx.headerstr+=idx.ifunmodifiedsince+"\r\n";
+	}
+	if(idx.maxforwards!=="") {
+		idx.headerstr+=idx.maxforwards+"\r\n";
+	}
+	if(idx.origin!=="") {
+		idx.headerstr+=idx.origin+"\r\n";
+	}
+	if(idx.pragma!=="") {
+		idx.headerstr+=idx.pragma+"\r\n";
+	}
+	if(idx.proxyauthorization!=="") {
+		idx.headerstr+=idx.proxyauthorization+"\r\n";
+	}
+	if(idx.range!=="") {
+		idx.headerstr+=idx.range+"\r\n";
+	}
+	if(idx.referer!=="") {
+		idx.headerstr+=idx.referer+"\r\n";
+	}
+	if(idx.te!=="") {
+		idx.headerstr+=idx.te+"\r\n";
+	}
+	if(idx.useragent!=="") {
+		idx.headerstr+=idx.useragent+"\r\n";
+	}
+	if(idx.upgrade!=="") {
+		idx.headerstr+=idx.upgrade+"\r\n";
+	}
+	if(idx.via!=="") {
+		idx.headerstr+=idx.via+"\r\n";
+	}
+	if(idx.warning!=="") {
+		idx.headerstr+=idx.warning+"\r\n";
+	}
+	if(idx.xrequestedwith!=="") {
+		idx.headerstr+=idx.xrequestedwith+"\r\n";
+	}
+	if(idx.dnt!=="") {
+		idx.headerstr+=idx.dnt+"\r\n";
+	}
+	if(idx.xforwardedfor!=="") {
+		idx.headerstr+=idx.xforwardedfor+"\r\n";
+	}
+	if(idx.xforwardedhost!=="") {
+		idx.headerstr+=idx.xforwardedhost+"\r\n";
+	}
+	if(idx.xforwardedproto!=="") {
+		idx.headerstr+=idx.xforwardedproto+"\r\n";
+	}
+	if(idx.frontendhttps!=="") {
+		idx.headerstr+=idx.frontendhttps+"\r\n";
+	}
+	if(idx.xhttpmethodoverride!=="") {
+		idx.headerstr+=idx.xhttpmethodoverride+"\r\n";
+	}
+	if(idx.xattdeviceid!=="") {
+		idx.headerstr+=idx.xattdeviceid+"\r\n";
+	}
+	if(idx.xwapprofile!=="") {
+		idx.headerstr+=idx.xwapprofile+"\r\n";
+	}
+	if(idx.proxyconnection!=="") {
+		idx.headerstr+=idx.proxyconnection+"\r\n";
+	}
+	if(idx.xuidh!=="") {
+		idx.headerstr+=idx.xuidh+"\r\n";
+	}
+	if(idx.xcsrftoken!=="") {
+		idx.headerstr+=idx.xcsrftoken+"\r\n";
+	}
+	idx.headerstr+="\r\n";
+		
+	return idx.headerstr;
 }
