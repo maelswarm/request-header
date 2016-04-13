@@ -56,142 +56,142 @@ idx.header = function() {
 	idx.headerstr+=idx.method+" "+idx.relativepath+" "+idx.httpversion+"\r\n"
 
 	if(idx.accept!=="") {
-		idx.headerstr+=idx.accept+"\r\n";
+		idx.headerstr+="Accept: "+idx.accept+"\r\n";
 	}
 	if(idx.acceptcharset!=="") {
-		idx.headerstr+=idx.acceptcharset+"\r\n";
+		idx.headerstr+="Accept-Charset: "+idx.acceptcharset+"\r\n";
 	}
 	if(idx.acceptencoding!=="") {
-		idx.headerstr+=idx.acceptencoding+"\r\n";
+		idx.headerstr+="Accept-Encoding: "+idx.acceptencoding+"\r\n";
 	}
 	if(idx.acceptlanguage!=="") {
-		idx.headerstr+=idx.acceptlanguage+"\r\n";
+		idx.headerstr+="Accept-Language: "+idx.acceptlanguage+"\r\n";
 	}
 	if(idx.acceptdatetime!=="") {
-		idx.headerstr+=idx.acceptdatetime+"\r\n";
+		idx.headerstr+="Accept-Datetime: "+idx.acceptdatetime+"\r\n";
 	}
 	if(idx.authorization!=="") {
-		idx.headerstr+=idx.authorization+"\r\n";
+		idx.headerstr+="Authorization: "+idx.authorization+"\r\n";
 	}
 	if(idx.cachecontrol!=="") {
-		idx.headerstr+=idx.cachecontrol+"\r\n";
+		idx.headerstr+="Cache-Control: "+idx.cachecontrol+"\r\n";
 	}
 	if(idx.connection!=="") {
-		idx.headerstr+=idx.connection+"\r\n";
+		idx.headerstr+="Connection: "+idx.connection+"\r\n";
 	}
 	if(idx.cookie!=="") {
-		idx.headerstr+=idx.cookie+"\r\n";
+		idx.headerstr+="Cookie: "+idx.cookie+"\r\n";
 	}
 	if(idx.contentlength!=="") {
-		idx.headerstr+=idx.contentlength+"\r\n";
+		idx.headerstr+="Content-Length: "+idx.contentlength+"\r\n";
 	}
 	if(idx.contentmd5!=="") {
-		idx.headerstr+=idx.contentmd5+"\r\n";
+		idx.headerstr+="Content-MD5: "+idx.contentmd5+"\r\n";
 	}
 	if(idx.contenttype!=="") {
-		idx.headerstr+=idx.contenttype+"\r\n";
+		idx.headerstr+="Content-Type: "+idx.contenttype+"\r\n";
 	}
 	if(idx.custom!=="") {
 		idx.headerstr+=idx.custom+"\r\n";
 	}
 	if(idx.date!=="") {
-		idx.headerstr+=idx.date+"\r\n";
+		idx.headerstr+="Date: "+idx.date+"\r\n";
 	}
 	if(idx.expect!=="") {
-		idx.headerstr+=idx.expect+"\r\n";
+		idx.headerstr+="Expect: "+idx.expect+"\r\n";
 	}
 	if(idx.forwarded!=="") {
-		idx.headerstr+=idx.forwarded+"\r\n";
+		idx.headerstr+="Forwarded: "+idx.forwarded+"\r\n";
 	}
 	if(idx.from!=="") {
-		idx.headerstr+=idx.from+"\r\n";
+		idx.headerstr+="From: "+idx.from+"\r\n";
 	}
 	if(idx.host!=="") {
-		idx.headerstr+=idx.host+"\r\n";
+		idx.headerstr+="Host: "+idx.host+"\r\n";
 	}
 	if(idx.ifmatch!=="") {
-		idx.headerstr+=idx.ifmatch+"\r\n";
+		idx.headerstr+="If-Match: "+idx.ifmatch+"\r\n";
 	}
 	if(idx.ifmodifiedsince!=="") {
-		idx.headerstr+=idx.ifmodifiedsince+"\r\n";
+		idx.headerstr+="If-Modified-Since: "+idx.ifmodifiedsince+"\r\n";
 	}
 	if(idx.ifnonematch!=="") {
-		idx.headerstr+=idx.ifnonematch+"\r\n";
+		idx.headerstr+="If-None-Match: "+idx.ifnonematch+"\r\n";
 	}
 	if(idx.ifrange!=="") {
-		idx.headerstr+=idx.ifrange+"\r\n";
+		idx.headerstr+="If-Range: "+idx.ifrange+"\r\n";
 	}
 	if(idx.ifunmodifiedsince!=="") {
-		idx.headerstr+=idx.ifunmodifiedsince+"\r\n";
+		idx.headerstr+="If-Unmodified-Since: "+idx.ifunmodifiedsince+"\r\n";
 	}
 	if(idx.maxforwards!=="") {
-		idx.headerstr+=idx.maxforwards+"\r\n";
+		idx.headerstr+="Max-Forwards: "+idx.maxforwards+"\r\n";
 	}
 	if(idx.origin!=="") {
-		idx.headerstr+=idx.origin+"\r\n";
+		idx.headerstr+="Origin: "+idx.origin+"\r\n";
 	}
 	if(idx.pragma!=="") {
-		idx.headerstr+=idx.pragma+"\r\n";
+		idx.headerstr+="Pragma: "+idx.pragma+"\r\n";
 	}
 	if(idx.proxyauthorization!=="") {
-		idx.headerstr+=idx.proxyauthorization+"\r\n";
+		idx.headerstr+="Proxy-Authorization: "+idx.proxyauthorization+"\r\n";
 	}
 	if(idx.range!=="") {
-		idx.headerstr+=idx.range+"\r\n";
+		idx.headerstr+="Range: "+idx.range+"\r\n";
 	}
 	if(idx.referer!=="") {
-		idx.headerstr+=idx.referer+"\r\n";
+		idx.headerstr+="Referer: "+idx.referer+"\r\n";
 	}
 	if(idx.te!=="") {
-		idx.headerstr+=idx.te+"\r\n";
+		idx.headerstr+="TE: "+idx.te+"\r\n";
 	}
 	if(idx.useragent!=="") {
-		idx.headerstr+=idx.useragent+"\r\n";
+		idx.headerstr+="User-Agent: "+idx.useragent+"\r\n";
 	}
 	if(idx.upgrade!=="") {
-		idx.headerstr+=idx.upgrade+"\r\n";
+		idx.headerstr+="Upgrade: "+idx.upgrade+"\r\n";
 	}
 	if(idx.via!=="") {
-		idx.headerstr+=idx.via+"\r\n";
+		idx.headerstr+="Via: "+idx.via+"\r\n";
 	}
 	if(idx.warning!=="") {
-		idx.headerstr+=idx.warning+"\r\n";
+		idx.headerstr+="Warning: "+idx.warning+"\r\n";
 	}
 	if(idx.xrequestedwith!=="") {
-		idx.headerstr+=idx.xrequestedwith+"\r\n";
+		idx.headerstr+="X-Requested-With: "+idx.xrequestedwith+"\r\n";
 	}
 	if(idx.dnt!=="") {
-		idx.headerstr+=idx.dnt+"\r\n";
+		idx.headerstr+="DNT: "+idx.dnt+"\r\n";
 	}
 	if(idx.xforwardedfor!=="") {
-		idx.headerstr+=idx.xforwardedfor+"\r\n";
+		idx.headerstr+="X-Forwarded-For: "+idx.xforwardedfor+"\r\n";
 	}
 	if(idx.xforwardedhost!=="") {
-		idx.headerstr+=idx.xforwardedhost+"\r\n";
+		idx.headerstr+="X-Forwarded-Host: "+idx.xforwardedhost+"\r\n";
 	}
 	if(idx.xforwardedproto!=="") {
-		idx.headerstr+=idx.xforwardedproto+"\r\n";
+		idx.headerstr+="X-Forwarded-Proto: "+idx.xforwardedproto+"\r\n";
 	}
 	if(idx.frontendhttps!=="") {
-		idx.headerstr+=idx.frontendhttps+"\r\n";
+		idx.headerstr+="Front-End-Https: "+idx.frontendhttps+"\r\n";
 	}
 	if(idx.xhttpmethodoverride!=="") {
-		idx.headerstr+=idx.xhttpmethodoverride+"\r\n";
+		idx.headerstr+="X-HTTP-Method-Override: "+idx.xhttpmethodoverride+"\r\n";
 	}
 	if(idx.xattdeviceid!=="") {
-		idx.headerstr+=idx.xattdeviceid+"\r\n";
+		idx.headerstr+="X-Att-Deviceid: "+idx.xattdeviceid+"\r\n";
 	}
 	if(idx.xwapprofile!=="") {
-		idx.headerstr+=idx.xwapprofile+"\r\n";
+		idx.headerstr+="x-wap-profile: "+idx.xwapprofile+"\r\n";
 	}
 	if(idx.proxyconnection!=="") {
-		idx.headerstr+=idx.proxyconnection+"\r\n";
+		idx.headerstr+="Proxy-Connection: "+idx.proxyconnection+"\r\n";
 	}
 	if(idx.xuidh!=="") {
-		idx.headerstr+=idx.xuidh+"\r\n";
+		idx.headerstr+="X-UIDH: "+idx.xuidh+"\r\n";
 	}
 	if(idx.xcsrftoken!=="") {
-		idx.headerstr+=idx.xcsrftoken+"\r\n";
+		idx.headerstr+="X-Csrf-Token: "+idx.xcsrftoken+"\r\n";
 	}
 	idx.headerstr+="\r\n";
 		
